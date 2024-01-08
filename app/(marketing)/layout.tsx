@@ -1,22 +1,20 @@
-import React from 'react';
-import { Medal } from 'lucide-react';
-import { Navbar } from './_components/navbar';
-import { Footer } from './_components/footer';
+import { Footer } from "./_components/footer";
+import { Navbar } from "./_components/navbar";
 
-const layout = ({
+const MarketingLayout = ({
   children
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) => {
   return (
-    <div className='h-full bg-slate-100'>
+    <div className="h-full bg-slate-100">
       <Navbar />
-      <main className='pt-40 pb-20 bg-slate-100'>
+      <main className="pt-40 pb-20 bg-slate-100">
         {children}
       </main>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default layout
+export default MarketingLayout;
